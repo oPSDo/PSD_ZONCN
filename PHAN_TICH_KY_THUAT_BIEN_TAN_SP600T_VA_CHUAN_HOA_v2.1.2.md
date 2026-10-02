@@ -43,24 +43,7 @@
 
 Từ ảnh chụp thực tế màn hình simulator HMI 600T (`media_1790755290125.png`) và đối chiếu với bảng tham số nhóm P1 trong `TaiLieu.pdf`, ta có quy chuẩn 100% chính xác:
 
-### 3.1. Danh mục 15 tham số cài đặt động cơ (Nhóm P1)
-| STT | Tên trên màn hình HMI | Mã tham số | Địa chỉ Modbus (Hex) | Scale | Đơn vị | Ý nghĩa kỹ thuật |
-|:---:|:---|:---:|:---:|:---:|:---:|:---|
-| 1 | **Max Freq** | P1.19 | `0x0077` | 0.01 (x100) | Hz | Tần số tối đa của động cơ |
-| 2 | **Up Limit Freq** | P1.05 | `0x0069` | 0.01 (x100) | Hz | Giới hạn tần số trên |
-| 3 | **LowLimit Freq** | P1.06 | `0x006A` | 0.01 (x100) | Hz | Giới hạn tần số dưới |
-| 4 | **Motor Type** | P1.20 | `0x0078` | 1 | - | Loại động cơ (0: KĐB, 2: PM Đồng bộ) |
-| 5 | **Rated Power** | P1.21 | `0x0079` | 0.1 (x10) | kW | Công suất định mức |
-| 6 | **Rated V** | P1.22 | `0x007A` | 1 | V | Điện áp định mức |
-| 7 | **Rated Current** | P1.23 | `0x007B` | 0.01 (x100) | A | Dòng điện định mức |
-| 8 | **Rated Freq** | P1.24 | `0x007C` | 0.01 (x100) | Hz | Tần số định mức |
-| 9 | **Rated Speed** | P1.25 | `0x007D` | 1 | rpm | Tốc độ quay định mức (vòng/phút) |
-| 10 | **Back EMF** | P1.26 | `0x007E` | 1 | V | Sức điện động cảm ứng ngược |
-| 11 | **Acc Time** | P1.07 | `0x006B` | 0.01 (x100) | S | Thời gian tăng tốc |
-| 12 | **Dec Time** | P1.08 | `0x006C` | 0.01 (x100) | S | Thời gian giảm tốc |
-| 13 | **Rs** | P1.31 | `0x0083` | 0.001 hoặc 1 | mΩ | Điện trở stator động cơ |
-| 14 | **Ld** | P1.32 | `0x0084` | 0.01 hoặc 1 | mH | Điện cảm trục d |
-| 15 | **Lq** | P1.33 | `0x0085` | 0.01 hoặc 1 | mH | Điện cảm trục q |
+
 
 ### 3.2. Chức năng 5 nút điều khiển trên màn hình Motor Debug
 1. **Nút `[Study]` (Tự học tham số động cơ & Xoá lỗi đèn vàng FAULT):**
